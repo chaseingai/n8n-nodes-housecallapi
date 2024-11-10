@@ -23,8 +23,8 @@
 	},
 	"include": [
 		"credentials/**/*",
-		"nodes/**/*",
-		"nodes/**/*.json",
+		"src/**/*",
+		"src/**/*.json",
 		"package.json",
 	],
 }
