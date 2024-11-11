@@ -1,46 +1,68 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
+# n8n-nodes-housecallapi
 
-# n8n-nodes-starter
+This is an n8n community node that enables you to use the Housecall Pro API in your n8n workflows.
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](n8n.io). It includes the node linter and other dependencies.
+Housecall Pro is a comprehensive software solution designed for home service professionals. It offers features such as customer management, scheduling, invoicing, payments, and more, to help service professionals streamline their operations and grow their businesses.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+- **This API is available to any Pro on the MAX or XL Plan**
 
-## Prerequisites
+[n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
-You need the following installed on your development machine:
+[Installation](#installation)  
+[Operations](#operations)  
+[Credentials](#credentials)  
+[Compatibility](#compatibility)  
+[Usage](#usage)  
+[Resources](#resources)  
+[Version history](#version-history)
+[Disclaimer](#disclaimer)
 
-* [git](https://git-scm.com/downloads)
-* Node.js and pnpm. Minimum version Node 18. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
-  ```
-  pnpm install n8n -g
-  ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+## Installation
 
-## Using this starter
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+## Operations
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
-   ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
-   ```
-3. Run `pnpm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+- **Get Customers**: Retrieve a list of customers.
+- **Create Customer**: Add a new customer to Housecall Pro.
+- **Update Customer**: Modify customer information.
+- **Delete Customer**: Remove a customer from the system.
+- **Get Jobs**: List all jobs.
+- **Create Job**: Schedule a new job for a customer.
+- **Update Job**: Adjust details for an existing job.
+- **Delete Job**: Remove a job from the schedule.
+- _Add any other operations your node supports here._
 
-## More information
+## Credentials
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+To authenticate with the Housecall Pro API, users need to:
+1. Sign up for a Housecall Pro account if they haven’t already.
+2. Generate an API key or OAuth token within their Housecall Pro account settings.
+3. Configure these credentials in n8n for the Housecall API node.
 
-## License
+## Compatibility
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+- Minimum n8n version: 1.66.0
+- Tested with Housecall Pro API version 1.0
+- Known compatibility issues: _List any if applicable_
+
+## Usage
+
+This node supports common operations with Housecall Pro. Users can build workflows that automatically retrieve, create, or manage customer data, jobs, and other resources provided by Housecall Pro.
+
+For n8n basics, see the [Try it out](https://docs.n8n.io/try-it-out/) documentation.
+
+## Resources
+
+* [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
+* [Housecall Pro API documentation](https://docs.housecallpro.com/)
+
+## Version history
+
+* **1.0.0**: Initial release with core operations for customers and jobs.
+
+## Disclaimer
+
+This project is an unofficial n8n node and is not affiliated with, endorsed, or supported by Housecall Pro. Housecall Pro is a registered trademark of its respective owner. This node is provided as-is for community use, and the creator of this node does not have any affiliation with Housecall Pro.
+
+

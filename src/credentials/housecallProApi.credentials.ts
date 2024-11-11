@@ -9,6 +9,7 @@ export class HousecallProApi implements ICredentialType {
 	name = 'housecallProApi';
 	displayName = 'Housecall Pro API';
 	documentationUrl = 'https://docs.housecallpro.com';
+
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',
@@ -38,4 +39,3 @@ export class HousecallProApi implements ICredentialType {
 		},
 	};
 }
-

@@ -16,15 +16,16 @@
 		"esModuleInterop": true,
 		"resolveJsonModule": true,
 		"incremental": true,
-		"declaration": true,
-		"sourceMap": true,
+		"declaration": false,
+		"sourceMap": false,
 		"skipLibCheck": true,
-		"outDir": "./dist/",
+		"outDir": "./dist"
 	},
 	"include": [
-		"credentials/**/*",
+		"src/HousecallPro/credentials/**/*",
 		"src/**/*",
 		"src/**/*.json",
-		"package.json",
-	],
+		"src/HousecallPro/credentials/api/*.ts"
+	]
 }
+

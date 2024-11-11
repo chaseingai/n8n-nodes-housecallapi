@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-housecallapi",
   "version": "0.1.0",
-  "description": "",
+  "description": "This is an n8n community node that enables you to use the Housecall Pro API in your n8n workflows.",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/chaseingai/n8n-nodes-housecallapi",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Chase Starnes",
+    "email": "hello@chasestarnes.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/chaseingai/n8n-nodes-housecallapi.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -57,6 +57,7 @@
     "n8n-workflow": "*"
   },
   "dependencies": {
-    "@devlikeapro/n8n-openapi-node": "^0.1.0"
+    "@devlikeapro/n8n-openapi-node": "^0.1.0",
+    "n8n-core": "^1.14.1"
   }
 }
